@@ -6,11 +6,13 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm neovim-qt neovim 
+pacman -Syu --noconfirm \
+  qt6ct kvantum lxqt-qtplugin       \
+  neovim-qt neovim 
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano 
 
 # Comment this out if you need an AUR package
 #make-aur-package PACKAGENAME
