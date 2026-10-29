@@ -8,12 +8,13 @@ export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/128x128/apps/nvim.png
-export DESKTOP=/usr/share/applications/nvim.desktop
+export ICON=/usr/share/icons/hicolor/scalable/apps/nvim-qt.svg
+export DESKTOP=/usr/share/applications/nvim-qt.desktop
 
 # Deploy dependencies
 quick-sharun \
-  /usr/bin/nvim      
+  /usr/bin/nvim    \
+  /usr/bin/nvim-qt
 
 # Additional changes can be done in between here
 
