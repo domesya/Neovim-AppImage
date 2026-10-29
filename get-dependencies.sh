@@ -7,7 +7,7 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-  neovim neovim-qt qt6ct kvantum lxqt-qtplugin
+  neovim neovim-qt qt6ct kvantum lxqt-qtplugin xcb-util-cursor
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
